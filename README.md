@@ -6,6 +6,7 @@ Below are projects I have worked on as a data intern at the Omaha World-Herald.
 * [Salaries database](#salaries)
 * [Nebraska State Assessment scores](#testscores)
 * [Douglas County Restaurant Inspections](#inspections)
+* [Nebraska Legislature Scraper](#legislative)
 
 <a name="salaries"></a>
 # [Salaries database](http://dataomaha.com/salaries)
@@ -36,3 +37,8 @@ I then created a Fusion Table map based on the ratings restaurants received and 
 An in-progress manual can be found [here](UpdatingRestaurantInspections.md).
 
 More information to come.
+
+<a name="legislative"></a>
+# [Nebraska Legislature Scraper](NebraskaLegislatureScraper)
+
+Currently in progress.
