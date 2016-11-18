@@ -21,11 +21,11 @@ def dayScraper(day):
         bill_link = bill.find_all('a')[0]['href']
         bill_id = re.match('.*?([0-9]+)$', bill_link).group(1)
         introducer_name = bill.find_all('a')[1].text
-        introducer_link = bill.find_all('a')[1]['href']
+        introducer_link = bill.find_all('a')[1]['href'].split('&')[0]
         introducer_id = re.match('.*?([0-9]+)$', introducer_link).group(1)
         status = bill.find_all('td')[2].text.strip()
         description = bill.find_all('td')[3].text.strip() 
-        bills_list.append((bill_name, bill_link, bill_id, introducer_name, introducer_link, status, description))
+        bills_list.append((bill_name, bill_link, bill_id, introducer_name, introducer_link, introducer_id, status, description))
         print(bill_name)
         
     
