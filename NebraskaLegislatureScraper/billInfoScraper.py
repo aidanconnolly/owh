@@ -90,9 +90,9 @@ def billInfo(documentId):
     proposed_amendments = related_transcripts = soup.find_all('div', class_="col-sm-4")[3].find_all('table')[1].find_all('tr')
     proposed_amendments_list = []
     for proposed_amendment in proposed_amendments:
-            proposed_amendment_text = proposed_amendment.text.strip('\n').split('\n\n\n')
+            proposed_amendment_text = proposed_amendment.text.strip().split('\n\n\n')
             proposed_amendment_proposer = proposed_amendment_text[0]
-            proposed_amendment_status = proposed_amendment_text[1].strip('\t').strip('\n')
+            proposed_amendment_status = proposed_amendment_text[1].strip()
             proposed_amendment_link = proposed_amendment.find('a')['href']
             proposed_amendments_list.append((proposed_amendment_proposer, proposed_amendment_status, proposed_amendment_link))
                                                                          
