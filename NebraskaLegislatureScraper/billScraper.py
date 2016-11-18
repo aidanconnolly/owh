@@ -1,3 +1,5 @@
+#This script gets all of the information about a specific bill. Information includes the bill name, the introducer, the introduction date, the text copies, the additional info, the history, the proposed amendments and the related transcripts.
+
 import requests
 from bs4 import BeautifulSoup
 
