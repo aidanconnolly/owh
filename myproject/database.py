@@ -16,14 +16,11 @@ while i < 142:
     if name != "Legislature":
         introducers[str(i)] = name
         print(name, str(i))
-    else:
-        continue
     i += 1
 
 for key, value in introducers.items():
     obj, created = Introducer.objects.update_or_create(introducer_id=str(key), introducer_name = value, defaults = {'introducer_id' : str(key), 'introducer_name' : value})
-   
-   print(obj, created)
+    print(obj, created)
     
 for object in Introducer.objects.all():
     id = str(object.introducer_id)
