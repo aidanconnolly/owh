@@ -43,6 +43,6 @@ for object in Introducer.objects.all():
             bill_id = re.match('.*?([0-9]+)$', bill_link).group(1)
             introduction_date = "2016-01-01"                      
             status = bill.find_all('td')[2].text.strip()
-            object.bill_set.create(bill_name=bill_name, bill_number=bill_number, bill_id=bill_id, introduction_date=introduction_date, status=status)
+            object.bill_set.update_or_create(bill_id=bill_id, defaults = {'bill_name':bill_name, 'bill_number':bill_number, 'introduction_date':introduction_date, 'status':status})
     else:
         continue
