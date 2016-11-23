@@ -1,9 +1,14 @@
 from django.db import models
 
 # Create your models here.
+class Legislature(models.Model):
+    legislature_id = models.CharField(max_length=10, primary_key=True)
+    legislature = models.CharField(max_length=5)
+    session = models.CharField(max_length=1)
+
 class Introducer(models.Model):
     introducer_id = models.CharField(max_length=10, primary_key=True)
-    introducer_name = models.CharField(max_length=50) 
+    introducer_name = models.CharField(max_length=50)
     def __str__(self):
         return self.introducer_name
 
@@ -11,7 +16,7 @@ class Bill(models.Model):
     bill_id = models.CharField(max_length=10, primary_key=True)
     bill_number = models.CharField(max_length=10)
     bill_name = models.CharField(max_length=100)
-    introducer_id = models.ForeignKey(Introducer, on_delete=models.CASCADE)
+    introducer_id = models.ManyToManyField(Introducer)
     introduction_date = models.DateField() 
     status = models.CharField(max_length=50)
     def __str__(self):
