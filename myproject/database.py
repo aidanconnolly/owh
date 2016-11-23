@@ -1,4 +1,3 @@
-from bills.models import Introducer, Bill
 import requests
 from bs4 import BeautifulSoup
 import re
