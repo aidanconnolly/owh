@@ -89,7 +89,7 @@ def billInfo(documentId):
     #Proposed By Priority deals with proposed amendments. Information includes who proposed the amendment, a link to the amendment and its current status. This loops through the entries, adding them to the proposed_amendments_list. The odd entries are the amendments and links; the even entries are the statuses.
     
     print('\tGetting proposed amendments...')
-    proposed_amendments = related_transcripts = soup.find_all('div', class_="col-sm-4")[3].find_all('table')[1].find_all('tr')
+    proposed_amendments = soup.find_all('div', class_="col-sm-4")[3].find_all('table')[1].find_all('tr')
     proposed_amendments_list = []
     for proposed_amendment in proposed_amendments:
             proposed_amendment_text = proposed_amendment.text.strip().split('\n\n\n')
