@@ -3,7 +3,7 @@
 
 Below are projects I have worked on as a data intern at the Omaha World-Herald.
 
-* [Nebraska Legislature Scraper](#legislative)
+* [Nebraska Legislature](#legislative)
 * [Douglas County Restaurant Inspections](#inspections)
 * [Salaries database](#salaries)
 * [Nebraska State Assessment scores](#testscores)
