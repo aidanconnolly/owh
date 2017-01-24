@@ -3,27 +3,19 @@
 
 Below are projects I have worked on as a data intern at the Omaha World-Herald.
 
+* [Nebraska Legislature Scraper](#legislative)
+* [Douglas County Restaurant Inspections](#inspections)
 * [Salaries database](#salaries)
 * [Nebraska State Assessment scores](#testscores)
-* [Douglas County Restaurant Inspections](#inspections)
-* [Nebraska Legislature Scraper](#legislative)
 
-<a name="salaries"></a>
-# [Salaries database](http://dataomaha.com/salaries)
-The World-Herald keeps a database of Nebraska public employee salaries for public perusal. The website is created using Django.  
+<a name="legislative"></a>
+# [Nebraska Legislature](http://dataomaha.com/legislature)
 
-I cleaned data provided by the State of Nebraska and added it to the database. I also updated the Django templates to handle special cases present in the State of Nebraska data.
+I created a project that scrapes [the Nebraska Legislature website](http://nebraskalegislature.gov) and keeps the data in a MySQL database. The scrapers run every two hours, collecting information about senators, committees and bills.
 
-More information to come.
+The data is then presented online in a Django project. Readers can find information on a specific bill, including co-sponsors, recent actions and how senators have voted.
 
-<a name="testscores"></a>
-# [Nebraska State Assessment scores](http://dataomaha.com/school-ratings)
-
-Last year, the Nebraska Department of Education released a new set of ratings for public schools named Accountability for a Quality Education System, Today and Tomorrow. Those ratings were collected and published online in a Django website.
-
-This year, the Department of Education released preliminary scores for the Nebraska State Assessment. I cleaned and organized the data, uploaded it to the database and created new templates to show the data.
-
-More information to come.
+Readers can also find their senator, using a Fusion Table map. 
 
 <a name="inspections"></a>
 # [Douglas County Restaurant Inspections](http://dataomaha.com/media/inspections/)
@@ -36,9 +28,15 @@ I then created a Fusion Table map based on the ratings restaurants received and 
 
 An in-progress manual can be found [here](UpdatingRestaurantInspections.md).
 
-More information to come.
+<a name="salaries"></a>
+# [Salaries database](http://dataomaha.com/salaries)
+The World-Herald keeps a database of Nebraska public employee salaries for public perusal. The website is created using Django.  
 
-<a name="legislative"></a>
-# [Nebraska Legislature Scraper](NebraskaLegislatureScraper)
+I cleaned data provided by the State of Nebraska and added it to the database. I also updated the Django templates to handle special cases present in the State of Nebraska data.
 
-Currently in progress.
+<a name="testscores"></a>
+# [Nebraska State Assessment scores](http://dataomaha.com/school-ratings)
+
+Last year, the Nebraska Department of Education released a new set of ratings for public schools named Accountability for a Quality Education System, Today and Tomorrow. Those ratings were collected and published online in a Django website.
+
+This year, the Department of Education released preliminary scores for the Nebraska State Assessment. I cleaned and organized the data, uploaded it to the database and created new templates to show the data.
