@@ -1,0 +1,21 @@
+GetNewsIntent what is in the news
+GetNewsIntent what is in the news today
+GetNewsIntent what's in the news
+GetNewsIntent what's in the news today
+GetNewsIntent what's new today
+GetNewsIntent what is in the headlines
+GetNewsIntent what's in the headlines
+GetNewsIntent read me the headlines
+GetNewsIntent read today's headlines
+GetNewsSectionIntent what is in the {Section} news
+GetNewsSectionIntent what is in the {Section} news today
+GetNewsSectionIntent what's in the {Section} news
+GetNewsSectionIntent what's in the {Section} news today
+GetNewsSectionIntent what's new in {Section}
+GetNewsSectionIntent what's new in {Section} today
+GetNewsSectionIntent what's new in the {Section}
+GetNewsSectionIntent what's new in the {Section} today
+GetNewsSectionIntent what is in the {Section} headlines
+GetNewsSectionIntent what's in the {Section} headlines
+GetNewsSectionIntent read me the {Section} headlines
+GetNewsSectionIntent read today's {Section} headlines

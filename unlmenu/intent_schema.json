@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "GetNewsIntent"
+    },
+    {
+      "intent": "GetNewsSectionIntent",
+      "slots": [
+        {
+          "name": "Section",
+          "type": "LIST_OF_SECTIONS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
